@@ -285,5 +285,5 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.id === 'imagePreviewModal') {
             closeImagePreview();
         }
-    });
+    }); 
    
