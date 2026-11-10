@@ -2216,3 +2216,10 @@ html, body {
         color: #F8F5FC !important;
     }
 }
+/* ==========================================================================
+   Fix Hamburger Icon Visibility on Light Pages (CakeArt & Medical)
+   ========================================================================== */
+body.cakeart-theme .mobile-menu-btn .line,
+body.medical-theme .mobile-menu-btn .line {
+    background-color: #1A2B4C !important; /* لون غامق عشان يبان على الخلفية الفاتحة */
+}
