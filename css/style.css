@@ -2166,7 +2166,7 @@ html, body {
     /* ترتيب الهيرو */
     .hero {
         flex-direction: column !important;
-        margin-top:10rem;
+        margin-top:10rem !important;
         padding-top: 2rem !important;
         gap: 2rem !important;
         text-align: center;
