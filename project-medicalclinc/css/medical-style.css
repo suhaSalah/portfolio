@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Medical Clinic Theme - Overrides Norex Dark Theme
+   ========================================================================== */
+
+body.medical-theme {
+    background-color: #F4F7FB !important; /* أزرق فاتح جداً (أقرب للأبيض) */
+    background-image: none !important;
+    color: #1A2B4C !important; /* نص كحلي داكن */
+}
+
+/* تعديلات الهيدر */
+body.medical-theme header {
+    background-color: rgba(244, 247, 251, 0.95) !important;
+    border-bottom: 1px solid rgba(26, 43, 76, 0.05) !important;
+}
+body.medical-theme header .logo span,
+body.medical-theme header nav a,
+body.medical-theme header .lang-btn {
+    color: #1A2B4C !important;
+}
+body.medical-theme header .lang-btn.active {
+    color: #0A8F9C !important; /* تركواز */
+}
+body.medical-theme header .btn-primary {
+    background-color: #1A2B4C !important;
+    color: #F4F7FB !important;
+    border-color: #1A2B4C !important;
+}
+
+/* الألوان المخصصة للمشروع */
+.medical-theme {
+    --accent: #0A8F9C; /* تركواز */
+    --accent-hover: #087a85;
+    --border-color: rgba(26, 43, 76, 0.1);
+    --text-muted: #5A6A85;
+}
+
+.medical-theme .project-title {
+    background: linear-gradient(135deg, #1A2B4C 0%, #5A6A85 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.medical-theme .section-title {
+    color: #1A2B4C;
+}
+
+.medical-theme .info-icon {
+    background: rgba(10, 143, 156, 0.1);
+    color: #0A8F9C;
+}
+
+.medical-theme .tag {
+    background: rgba(26, 43, 76, 0.03);
+    border: 1px solid var(--border-color);
+    color: #1A2B4C;
+}
+
+.medical-theme .laptop-screen {
+    border-color: #d1d9e6;
+}
+.medical-theme .laptop-base {
+    background: #d1d9e6;
+}
+.medical-theme .laptop-base::after {
+    background: #b0bcd0;
+}
+
+/* معرض عائم بلون كحلي داكن كما في الصورة */
+.medical-theme .floating-gallery.dark-blue-gallery {
+    background: #14233D; 
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #F4F7FB;
+}
+.medical-theme .dark-blue-gallery .gallery-logo { color: #F4F7FB; }
+.medical-theme .dark-blue-gallery .gallery-close { color: #F4F7FB; }
+.medical-theme .dark-blue-gallery .gallery-nav { color: #F4F7FB; }
+.medical-theme .dark-blue-gallery .gallery-count { color: rgba(255,255,255,0.7); }
+
+/* زر الـ CTA أسفل الصفحة (تدرج أزرق/بنفسجي هادئ) */
+.medical-theme .cta-banner {
+    background: linear-gradient(90deg, #E6F0FA 0%, #D4E0F0 100%);
+    border-color: rgba(10, 143, 156, 0.2);
+}
+.medical-theme .cta-icon {
+    background: rgba(10, 143, 156, 0.15);
+    color: #0A8F9C;
+}
+.medical-theme .cta-text h3 {
+    color: #1A2B4C;
+}
+
+/* أزرار الفيديو واللايت بوكس */
+.medical-theme .image-preview-modal {
+    background: rgba(244, 247, 251, 0.95);
+}
+.medical-theme .preview-close {
+    color: #1A2B4C;
+}
+.medical-theme .zoom-controls button {
+    background: rgba(0,0,0,0.05);
+    border-color: rgba(0,0,0,0.1);
+    color: #1A2B4C;
+}
+.medical-theme .zoom-controls button:hover {
+    background: #0A8F9C;
+    color: #fff;
+}
+
+.nav-prev, .nav-next {
+    color: #1A2B4C;
+}

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medicalclinc Clinic Case Study | Suha Salah</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Main Site CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- medicalclinc Theme CSS -->
+    <link rel="stylesheet" href="css/project-style.css">
+    <!-- medicalclinc Theme CSS -->
+    <link rel="stylesheet" href="css/medical-style.css">
+</head>
+<body class="medical-theme">
+
+    <!-- ==========================================================================
+         Header
+         ========================================================================== -->
+    <header>
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="#1A2B4C"/>
+            </svg>
+            <span>SUHA SALAH</span>
+        </div>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+        </button>
+
+        <div class="nav-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="../index.html#work" data-i18n="nav-work">Work</a></li>
+                    <li><a href="../index.html#services" data-i18n="nav-services">Services</a></li>
+                    <li><a href="../index.html#about" data-i18n="nav-about">About</a></li>
+                    <li><a href="../index.html#contact" data-i18n="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="lang-switcher">
+                    <button class="lang-btn" data-lang="ar">العربية</button>
+                    <span class="divider">|</span>
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                </div>
+                <a href="#" class="btn btn-primary btn-sm whatsapp-btn" data-i18n="btn-talk" target="_blank" rel="noopener noreferrer">Let's Talk</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="project-page">
+        
+        <!-- Section 1: Hero -->
+        <section class="project-hero">
+            <div class="project-container">
+                <div class="hero-content">
+                    <a href="../index.html#work" class="back-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        <span data-i18n="back-projects">Back to Projects</span>
+                    </a>
+                    
+                    <div class="project-meta-top">
+                        <span data-i18n="med-proj-id">PROJECT 03 — WEBSITE</span>
+                    </div>
+                    
+                    <h1 class="project-title">Medical Clinc </h1>
+                    <h2 class="project-category" data-i18n="med-proj-category">Healthcare Website</h2>
+                    
+                    <p class="project-intro" data-i18n="med-proj-intro">
+                        A modern, professional healthcare website that enhances patient care, builds trust, and provides easy access to medicalclinc services with a clean and user-friendly experience.
+                    </p>
+                    
+                    <div class="tech-tags">
+                        <span class="tag">Healthcare</span>
+                        <span class="tag">Responsive</span>
+                        <span class="tag">UX Design</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="laptop-mockup">
+                        <div class="laptop-screen">
+                            <img src="assets/images/medicalclinc/laptop-hero.png" alt="medicalclinc Website on Laptop">
+                        </div>
+                        <div class="laptop-base"></div>
+                    </div>
+                    
+                    <!-- Floating Gallery (Dark Blue) -->
+                    <div class="floating-gallery dark-blue-gallery" id="heroGallery">
+                        <div class="gallery-header">
+                            <span class="gallery-logo">Medical Clinc</span>
+                            <button class="gallery-close" aria-label="Close Gallery">&times;</button>
+                        </div>
+                        <div class="gallery-main">
+                            <img src="assets/images/medicalclinc/gallery-main.png" alt="Gallery Main" id="mainGalleryImg">
+                        </div>
+                        <div class="gallery-thumbs">
+                            <img src="assets/images/medicalclinc/thumb-1.png" alt="Thumb 1" class="active" onclick="changeGalleryImg(this, 'assets/images/medicalclinc/thumb-1.png')">
+                            <img src="assets/images/medicalclinc/thumb-2.png" alt="Thumb 2" onclick="changeGalleryImg(this, 'assets/images/medicalclinc/thumb-2.png')">
+                            <img src="assets/images/medicalclinc/thumb-3.png" alt="Thumb 3" onclick="changeGalleryImg(this, 'assets/images/medicalclinc/thumb-3.png')">
+                            <img src="assets/images/medicalclinc/thumb-4.png" alt="Thumb 4" onclick="changeGalleryImg(this, 'assets/images/medicalclinc/thumb-4.png')">
+                        </div>
+                        <div class="gallery-controls">
+                            <button class="gallery-nav" id="prevImg">&larr;</button>
+                            <span class="gallery-count">1 / 4</span>
+                            <button class="gallery-nav" id="nextImg">&rarr;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Section 2: Project Overview -->
+        <section class="project-section">
+            <div class="project-container two-col">
+                <div class="col-text">
+                    <div class="section-label"><span data-i18n="med-sec-1-num">01 / ABOUT THE PROJECT</span></div>
+                    <h2 class="section-title" data-i18n="med-sec-1-title">About the Project</h2>
+                    <p class="section-desc" data-i18n="med-sec-1-desc">
+                        User's in a healthcare institution needed a modern website to showcase their services, build patient trust, and make it easy to schedule appointments online. The goal was to create a professional, accessible platform that reflects the quality of care and expertise.
+                    </p>
+                    
+                    <div class="info-blocks">
+                        <div class="info-block">
+                            <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+                            <div>
+                                <h4 data-i18n="med-info-type-title">Type</h4>
+                                <p data-i18n="med-info-type-desc">Healthcare Website</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+                            <div>
+                                <h4 data-i18n="med-info-goal-title">Goal</h4>
+                                <p data-i18n="med-info-goal-desc">Showcase services & improve patient access.</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <div class="info-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+                            <div>
+                                <h4 data-i18n="med-info-role-title">My Role</h4>
+                                <p data-i18n="med-info-role-desc">Designed and developed a modern, responsive website with a user-friendly interface.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-visual">
+                    <div class="desktop-mockup">
+                        <img src="assets/images/medicalclinc/overview-desktop.png" alt="Desktop View">
+                    </div>
+                    <div class="mobile-mockup">
+                        <img src="assets/images/medicalclinc/overview-mobile.png" alt="Mobile View">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Section 3: The Solution -->
+        <section class="project-section">
+            <div class="project-container two-col">
+                <div class="col-text">
+                    <div class="section-label"><span data-i18n="med-sec-2-num">02 / THE SOLUTION</span></div>
+                    <h2 class="section-title" data-i18n="med-sec-2-title">Built with Attention to Detail</h2>
+                    <p class="section-desc" data-i18n="med-sec-2-desc">
+                        I designed a clean and professional website for the medicalclinc clinic, focusing on clear navigation, easy appointment booking, and a trustworthy design. The layout is responsive, ensuring a seamless experience across all devices.
+                    </p>
+                    <a href="javascript:void(0)" onclick="openImagePreview('assets/images/medicalclinc/full-page-screenshot.png')" class="btn btn-outline">
+                        <span data-i18n="btn-view-site">View Full Website</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+                
+                <div class="col-visual grid-3">
+                    <div class="impl-card">
+                        <img src="assets/images/medicalclinc/impl-home.png" alt="Homepage" onclick="openImageModal(this.src)">
+                        <h4 data-i18n="med-impl-1-title">Homepage</h4>
+                        <p data-i18n="med-impl-1-desc">A clean and modern with easy access.</p>
+                    </div>
+                    <div class="impl-card">
+                        <img src="assets/images/medicalclinc/impl-projects.png" alt="Services" onclick="openImageModal(this.src)">
+                        <h4 data-i18n="med-impl-2-title">Services Section</h4>
+                        <p data-i18n="med-impl-2-desc">Showcase medicalclinc services clearly.</p>
+                    </div>
+                    <div class="impl-card">
+                        <img src="assets/images/medicalclinc/impl-services.png" alt="Doctors" onclick="openImageModal(this.src)">
+                        <h4 data-i18n="med-impl-3-title">Doctors Section</h4>
+                        <p data-i18n="med-impl-3-desc">Highlight experienced doctors and staff.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Section 4: Responsive Experience -->
+        <section class="project-section">
+            <div class="project-container two-col">
+                <div class="col-text">
+                    <div class="section-label"><span data-i18n="med-sec-3-num">03 / RESPONSIVE EXPERIENCE</span></div>
+                    <h2 class="section-title" data-i18n="med-sec-3-title">Designed for Every Screen</h2>
+                    <p class="section-desc" data-i18n="med-sec-3-desc">
+                        The website is fully responsive, providing a seamless experience across all devices. Whether on desktop, tablet, or mobile, the layout adapts perfectly and maintains a consistent user experience.
+                    </p>
+                </div>
+                
+                <div class="col-visual responsive-mockups">
+                    <div class="resp-desktop"><img src="assets/images/medicalclinc/resp-desktop.png" alt="Desktop"></div>
+                    <div class="resp-tablet"><img src="assets/images/medicalclinc/resp-tablet.png" alt="Tablet"></div>
+                    <div class="resp-mobile"><img src="assets/images/medicalclinc/resp-mobile.png" alt="Mobile"></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Section 5: Tools & Video -->
+        <section class="project-section">
+            <div class="project-container two-col">
+                <div class="col-text">
+                    <div class="section-label"><span data-i18n="med-sec-4-num">04 / PROJECT DETAILS</span></div>
+                    <h2 class="section-title" data-i18n="med-sec-4-title">Tools & Implementation</h2>
+                    <div class="tech-tags" style="margin-bottom: 1.5rem;">
+                        <span class="tag">WordPress</span>
+                        <span class="tag">Elementor</span>
+                        <span class="tag">Custom CSS</span>
+                        <span class="tag">Elementor Header/Footer</span>
+                    </div>
+                    <p class="section-desc" data-i18n="med-sec-4-desc">
+                        This project was built using modern tools and best practices to ensure performance, flexibility, and a great user experience.
+                    </p>
+                </div>
+                
+                <div class="col-visual">
+                    <div class="video-card" onclick="openVideoModal()">
+                        <img src="assets/images/medicalclinc/video-thumbnail.png" alt="Video Thumbnail">
+                        <div class="video-overlay">
+                            <div class="play-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <div class="video-text">
+                                <span data-i18n="video-label">Watch Project Video</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="project-cta">
+            <div class="project-container">
+                <div class="cta-banner">
+                    <div class="cta-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <div class="cta-text">
+                        <h3 data-i18n="cta-title">Have a Website to Improve?</h3>
+                        <p data-i18n="cta-desc">Let's talk about your project.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                        <span data-i18n="btn-talk">Let's Talk</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Navigation -->
+        <section class="project-nav-bottom">
+            <div class="project-container">
+                <a href="../project-cakeart/project-cakeart.html" class="nav-prev">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span data-i18n="nav-prev">CakeArt</span>
+                </a>
+                <a href="../project-norex/project-norex.html" class="nav-next">
+                    <span data-i18n="nav-next">Norex</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modals -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeImageModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <div id="videoModal" class="modal">
+        <span class="modal-close" onclick="closeVideoModal()">&times;</span>
+        <div class="video-container">
+            <video id="projectVideo" controls preload="auto">
+                <source src="assets/videos/medicalclinc-demo.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div id="imagePreviewModal" class="image-preview-modal">
+        <div class="preview-toolbar">
+            <div class="zoom-controls">
+                <button onclick="zoomImage(-0.25)" aria-label="Zoom Out">-</button>
+                <button onclick="zoomImage(0.25)" aria-label="Zoom In">+</button>
+            </div>
+            <button class="preview-close" onclick="closeImagePreview()" aria-label="Close Preview">&times;</button>
+        </div>
+        <div class="preview-scroll-container" id="previewScrollContainer">
+            <img id="previewImage" src="" alt="Full Website Preview">
+        </div>
+        <div class="preview-video-cta">
+            <button onclick="closeImagePreview(); openVideoModal();" class="btn btn-primary">
+                <span data-i18n="btn-watch-demo-lightbox">Want to see the interactions? Watch the Demo</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+        </div>
+    </div>
+
+     <!-- ==========================================================================
+         Footer Section
+         ========================================================================== -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <!-- Top Row: Brand & Socials -->
+            <div class="footer-top">
+                
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="#ffffff"/>
+                        </svg>
+                        <span>SUHA SALAH</span>
+                    </a>
+                    <p class="footer-subtitle" data-i18n="footer-subtitle">WordPress Front-End Customization</p>
+                </div>
+
+                <div class="footer-socials">
+                    <!-- ملاحظة: استبدل # بروابط حساباتك الحقيقية -->
+                    <a href="https://www.linkedin.com/in/suha-salah?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <!--<a href="#" class="social-link" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M4 20L20 4"></path></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Behance" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4H4v16h8c2.21 0 4-1.79 4-4s-1.79-4-4-4z"></path><path d="M4 12h8"></path></svg>
+                    </a>-->
+                    <a href="https://www.instagram.com/suha_wordpress?srtk=MXh1bGFsM3R3eG9zdw==&utm_source=ig_contact_invite" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Divider Line -->
+            <hr class="footer-divider">
+
+            <!-- Bottom Row: Copyright & Tagline -->
+            <div class="footer-bottom">
+                <p class="footer-copyright" data-i18n="footer-copy">
+                    &copy; 2025 Suha Salah. All rights reserved.
+                </p>
+                <p class="footer-tagline" data-i18n="footer-tagline">
+                    Built with purpose for better websites.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+    <script src="js/project-script.js"></script>
+</body>
+</html>
