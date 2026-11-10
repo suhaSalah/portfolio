@@ -128,18 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ==========================================
-    // 2. Mobile Menu
-    // ==========================================
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const navWrapper = document.querySelector('.nav-wrapper');
-    if (mobileMenuBtn && navWrapper) {
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenuBtn.classList.toggle('active');
-            navWrapper.classList.toggle('active');
-        });
-    }
-
+     
     // ==========================================
     // 3. Gallery Logic (Hero)
     // ==========================================
