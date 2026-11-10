@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suhu Salah | WordPress Front-End Customization</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <!-- استبدل رابط الخطوط القديم بهذا -->
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+<section class="containear">
+        <header>
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="#1a1230"/>
+            </svg>
+            <span>SUHA SALAH</span>
+        </div>
+
+        <!-- زر القائمة للموبايل -->
+        <button class="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+        </button>
+
+        <!-- الحاوية التي تضم الروابط والأزرار -->
+        <div class="nav-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="#work" data-i18n="nav-work">Work</a></li>
+                    <li><a href="#services" data-i18n="nav-services">Services</a></li>
+                    <li><a href="#about" data-i18n="nav-about">About</a></li>
+                    <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="lang-switcher">
+                    <button class="lang-btn" data-lang="ar">العربية</button>
+                    <span class="divider">|</span>
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                </div>
+                <a href="#contact" class="btn btn-primary btn-sm whatsapp-btn" data-i18n="btn-talk">Let's Talk</a>
+            </div>
+        </div>
+    </header>
+    <!-- Main Hero Section -->
+    <main class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow" data-i18n="eyebrow">WORDPRESS FRONT-END CUSTOMIZATION</p>
+            
+            <h1 class="headline">
+                <span class="headline-main" data-i18n="headline-main">Your WordPress Website,</span>
+                <span class="headline-accent" data-i18n="headline-accent">Refined.</span>
+            </h1>
+            
+            <p class="description" data-i18n="description">
+                I help businesses improve their existing WordPress websites through thoughtful customization, responsive layouts, and clean front-end refinements.
+            </p>
+            
+           <div class="cta-group">
+                <a href="#work" class="btn btn-primary">
+                    <span data-i18n="btn-primary">Explore My Work</span>
+                    <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="#" class="btn btn-outline whatsapp-btn" data-i18n="btn-secondary">Let's Talk</a>
+            </div>
+
+            <!-- ضيف الكود ده تحت الـ cta-group وقبل ما تقفل الـ main أو الـ hero -->
+            <div class="scroll-indicator">
+                <span class="scroll-text" data-i18n="scroll-text">Scroll</span>
+                <div class="scroll-track">
+                    <div class="scroll-dot"></div>
+                    <div class="scroll-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <!-- Floating 3D Shapes -->
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+
+            <div class="coin-wrapper">
+                <div class="coin-group">
+                    
+                    <!-- Right Coin (Dark) -->
+                    <div class="coin coin-right">
+                        <div class="coin-inner">
+                            <p class="coin-text" data-i18n="coin-text">Every<br>Detail<br>Makes a<br>Difference.</p>
+                        </div>
+                    </div>
+
+                    <!-- Left Coin (Light with Image) -->
+                    <div class="coin coin-left">
+                        <div class="coin-inner">
+                            <!-- Using a placeholder image that fits the aesthetic -->
+                            <img src="assets/images/hero/coin.jpg" alt="Working on laptop" class="coin-img">
+                            <div class="coin-overlay"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</section>
+
+<!-- ==========================================================================
+         About Me Section
+         ========================================================================== -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            
+            <!-- Left Column: Image -->
+            <div class="about-image-wrapper">
+                <div class="about-image-arch">
+                    <!-- قم بتغيير المسار إلى مسار صورة الفتاة الحقيقية -->
+                    <img src="assets/images/about/about-person.jpg" alt="Suha Salah">
+                </div>
+            </div>
+
+            <!-- Middle Column: Content -->
+            <div class="about-content">
+                <div class="section-header">
+                    <span class="section-num">01</span>
+                    <div class="section-line"></div>
+                </div>
+                
+                <h2 class="about-title">
+                    <span data-i18n="about-title-main">About</span> 
+                    <span class="text-purple" data-i18n="about-title-accent">Me</span>
+                </h2>
+                
+                <p class="about-desc" data-i18n="about-desc">
+                    I'm Suha Salah, a WordPress Front-End Customization Specialist. I focus on turning existing websites into better, faster, and more visually refined experiences.
+                </p>
+                
+                <a href="assets/Suha_Salah-CV-EN.pdf" target="_blank" rel="noopener noreferrer" class="btn-about cv-download-btn">
+                    <span data-i18n="about-cta">Download CV</span>
+                    <!-- أيقونة تحميل احترافية -->
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Right Column: Features -->
+            <div class="about-features">
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 12L2 9l4-6z"></path></svg>
+                    </div>
+                    <span data-i18n="feat-1">Thoughtful Design</span>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <span data-i18n="feat-2">Clean Code</span>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                    </div>
+                    <span data-i18n="feat-3">Better Websites</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+   
+        <!-- ==========================================================================
+         Services Section
+         ========================================================================== -->
+    <section class="services-section" id="services">
+        <!-- Ambient Background Glows -->
+        <div class="services-bg-glow glow-1"></div>
+        <div class="services-bg-glow glow-2"></div>
+
+        <div class="services-container">
+            
+            <!-- Left Column: Header -->
+            <div class="services-header">
+                <div class="services-title-group">
+                    <span class="services-number">02</span>
+                    <h2 class="services-title">
+                        <span data-i18n="srv-title">Services</span>
+                    </h2>
+                </div>
+                <p class="services-desc" data-i18n="srv-desc">
+                    Thoughtful customizations. Better performance. A more professional look.
+                </p>
+                <a href="#" class="btn-services-cta whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                    <span data-i18n="srv-cta-new">Discuss Your Project</span>
+                    <svg class="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Right Column: Cards Grid -->
+            <div class="services-grid">
+                
+                <!-- Card 1 -->
+                <a href="#" class="service-card">
+                    <div class="card-top">
+                        <div class="card-icon">
+                            <!-- WordPress Icon -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M6 12h12M12 6v12M8 8l8 8M16 8l-8 8"></path></svg>
+                        </div>
+                        <span class="card-num">01</span>
+                    </div>
+                    <h3 class="card-title" data-i18n="srv-1-title">WordPress Page Customization</h3>
+                    <p class="card-desc" data-i18n="srv-1-desc">Tailoring your existing WordPress pages to match your goals and brand identity.</p>
+                    <div class="card-arrow">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="#" class="service-card">
+                    <div class="card-top">
+                        <div class="card-icon">
+                            <!-- Monitor Icon -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <span class="card-num">02</span>
+                    </div>
+                    <h3 class="card-title" data-i18n="srv-2-title">Responsive Design Improvements</h3>
+                    <p class="card-desc" data-i18n="srv-2-desc">Ensuring your site looks and works perfectly on all devices.</p>
+                    <div class="card-arrow">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="#" class="service-card">
+                    <div class="card-top">
+                        <div class="card-icon">
+                            <!-- Code Icon -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <span class="card-num">03</span>
+                    </div>
+                    <h3 class="card-title" data-i18n="srv-3-title">Custom CSS Styling & Front-End Fixes</h3>
+                    <p class="card-desc" data-i18n="srv-3-desc">Clean, modern styling and precise fixes for a polished experience.</p>
+                    <div class="card-arrow">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                </a>
+
+                <!-- Card 4 -->
+                <a href="#" class="service-card">
+                    <div class="card-top">
+                        <div class="card-icon">
+                            <!-- Grid/Layout Icon -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                        </div>
+                        <span class="card-num">04</span>
+                    </div>
+                    <h3 class="card-title" data-i18n="srv-4-title">WordPress Layout & Visual Refinements</h3>
+                    <p class="card-desc" data-i18n="srv-4-desc">Improving structure, spacing, and overall visual appeal.</p>
+                    <div class="card-arrow">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+     <!-- ==========================================================================
+         Selected Work Section
+         ========================================================================== -->
+    <section class="selected-work" id="work">
+        <div class="sw-container">
+            
+            <!-- Section Header -->
+            <div class="sw-header">
+                <div class="sw-title-group">
+                    <span class="sw-number">03</span>
+                    <h2 class="sw-title">
+                        <span data-i18n="sw-title-main">Selected</span> 
+                        <span class="sw-highlight" data-i18n="sw-title-highlight">Work</span>
+                    </h2>
+                </div>
+                
+                <div class="sw-meta">
+                    <p class="sw-desc" data-i18n="sw-desc">
+                        Real projects. Thoughtful improvements. Every detail matters.
+                    </p>
+                   <a href="#" class="sw-view-all whatsapp-btn">
+                        <span data-i18n="sw-view-all">Let's Work Together</span>
+                        <!-- هذا هو السهم -->
+                        <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="sw-grid">
+                
+                <!-- Project 1 -->
+                <a href="project-norex/project-norex.html" class="sw-card" target="_blank" rel="noopener noreferrer">
+                    <div class="sw-card-visual">
+                        <!-- Desktop Placeholder -->
+                        <div class="sw-mockup-desktop">
+                            <!-- REPLACE THE DIV BELOW WITH YOUR <img> TAG -->
+                            <img src="assets/images/Work/Norex.png" alt="Construction Website Desktop" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                        </div>
+                        <!-- Mobile Placeholder -->
+                        <div class="sw-mockup-mobile">
+                            <!-- REPLACE THE DIV BELOW WITH YOUR <img> TAG -->
+                            <img src="assets/images/Work/NorexM.png" alt="Mobile View" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                        </div>
+                    </div>
+                    <div class="sw-card-info">
+                        <div class="sw-card-text">
+                            <span class="sw-card-num">Project 01</span>
+                            <h3 class="sw-card-title" data-i18n="sw-p1-title">Construction Company Website</h3>
+                            <p class="sw-card-cat" data-i18n="sw-p1-cat">Custom Layout & Elementor Build</p>
+                        </div>
+                        <div class="sw-card-arrow">
+                            <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="project-cakeart/project-cakeart.html" class="sw-card" target="_blank" rel="noopener noreferrer">
+                    <div class="sw-card-visual">
+                        <div class="sw-mockup-desktop">
+                             <img src="assets/images/Work/cakeArt.png" alt="Construction Website Desktop" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                        </div>
+                        <div class="sw-mockup-mobile">
+                            <img src="assets/images/Work/cakeArtM.png" alt="Mobile View" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                        </div>
+                    </div>
+                    <div class="sw-card-info">
+                        <div class="sw-card-text">
+                            <span class="sw-card-num">Project 02</span>
+                            <h3 class="sw-card-title" data-i18n="sw-p2-title">Bakery & Food Website</h3>
+                            <p class="sw-card-cat" data-i18n="sw-p2-cat">Responsive Design & Flexbox Layout</p>
+                        </div>
+                        <div class="sw-card-arrow">
+                            <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="project-medicalclinc/project-medicalclinc.html" class="sw-card" target="_blank" rel="noopener noreferrer">
+                    <div class="sw-card-visual">
+                        <div class="sw-mockup-desktop">
+                            <img src="assets/images/Work/medicalclinc.png" alt="Construction Website Desktop" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                        </div>
+                        <div class="sw-mockup-mobile">
+                             <img src="assets/images/Work/medicalclincM .png" alt="Mobile View" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                        </div>
+                    </div>
+                    <div class="sw-card-info">
+                        <div class="sw-card-text">
+                            <span class="sw-card-num">Project 03</span>
+                            <h3 class="sw-card-title" data-i18n="sw-p3-title">Medical Center Website</h3>
+                            <p class="sw-card-cat" data-i18n="sw-p3-cat">Custom CSS/JS & Booking Form</p>
+                        </div>
+                        <div class="sw-card-arrow">
+                            <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+            <!-- ==========================================================================
+         Contact / CTA Section
+         ========================================================================== -->
+    <section class="cta-section" id="contact">
+        <div class="cta-container">
+            
+            <!-- Left Column: Content -->
+            <div class="cta-content">
+                <div class="cta-header">
+                    <span class="cta-num">04</span>
+                    <div class="cta-line"></div>
+                </div>
+                
+                <h2 class="cta-title">
+                    <span data-i18n="cta-title-1">Have a Website</span><br>
+                    <span data-i18n="cta-title-2">That Could Be Better?</span>
+                </h2>
+                
+                <p class="cta-desc" data-i18n="cta-desc">
+                    Let's talk about how we can improve your WordPress site, with the right customizations and front-end refinements.
+                </p>
+                
+                <a href="#" class="btn-cta whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                    <span data-i18n="cta-btn">Get In Touch</span>
+                    <svg class="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+
+            <!-- Right Column: 3D Image -->
+            <div class="cta-visual">
+                <!-- استبدل المسار بمسار صورة القوس ثلاثي الأبعاد -->
+                <img src="assets/images/contact/cta-arch.png" alt="3D Archway with Sphere">
+            </div>
+
+            <!-- Far Right: Vertical Text (Hidden on Mobile) -->
+                       <!-- Far Right: Vertical Text -->
+            <div class="cta-vertical-text">
+                <div class="vertical-text-content" data-i18n="cta-vertical">
+                    Better<br>Design.<br>Better<br>Performance.
+                </div>
+                
+                <div class="vertical-line-wrapper">
+                    <div class="v-arrow"></div>
+                    <div class="v-line"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+        <!-- ==========================================================================
+         Footer Section
+         ========================================================================== -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <!-- Top Row: Brand & Socials -->
+            <div class="footer-top">
+                
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="#ffffff"/>
+                        </svg>
+                        <span>SUHA SALAH</span>
+                    </a>
+                    <p class="footer-subtitle" data-i18n="footer-subtitle">WordPress Front-End Customization</p>
+                </div>
+
+                <div class="footer-socials">
+                    <!-- ملاحظة: استبدل # بروابط حساباتك الحقيقية -->
+                    <a href="https://www.linkedin.com/in/suha-salah?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <!--<a href="#" class="social-link" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M4 20L20 4"></path></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Behance" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4H4v16h8c2.21 0 4-1.79 4-4s-1.79-4-4-4z"></path><path d="M4 12h8"></path></svg>
+                    </a>-->
+                    <a href="https://www.instagram.com/suha_wordpress?srtk=MXh1bGFsM3R3eG9zdw==&utm_source=ig_contact_invite" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Divider Line -->
+            <hr class="footer-divider">
+
+            <!-- Bottom Row: Copyright & Tagline -->
+            <div class="footer-bottom">
+                <p class="footer-copyright" data-i18n="footer-copy">
+                    &copy; 2025 Suha Salah. All rights reserved.
+                </p>
+                <p class="footer-tagline" data-i18n="footer-tagline">
+                    Built with purpose for better websites.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+        <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
