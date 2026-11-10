@@ -2223,3 +2223,12 @@ body.cakeart-theme .mobile-menu-btn .line,
 body.medical-theme .mobile-menu-btn .line {
     background-color: #1A2B4C !important; /* لون غامق عشان يبان على الخلفية الفاتحة */
 }
+/* ==========================================================================
+   Spacing below buttons on Mobile
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* إضافة مسافة تحت الأزرار اللي جوة النصوص عشان متلزقش في الصور */
+    .col-text .btn {
+        margin-bottom: 2rem !important;
+    }
+}
