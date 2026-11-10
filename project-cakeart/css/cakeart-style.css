@@ -128,7 +128,7 @@ body.cakeart-theme header .btn-primary {
 @media (max-width: 768px) {
     /* خلفية القائمة في صفحة CakeArt */
     body.cakeart-theme .nav-wrapper {
-        background-color: #FAF6F5 !important; /* لون فاتح مطابق للصفحة */
+        background-color: #000 !important; /* لون فاتح مطابق للصفحة */
         border-top: 1px solid rgba(45, 36, 33, 0.1) !important;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     }
