@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // تحديد حدود التكبير (من 50% إلى 300%)
         if (currentZoom < 0.5) currentZoom = 0.5;
         if (currentZoom > 3) currentZoom = 3;
-
+ 
         img.style.width = (currentZoom * 100) + '%';
     };
 
