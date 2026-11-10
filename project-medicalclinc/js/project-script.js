@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // ==========================================
     // 1. Translations (نظام الترجمة)
-    // ==========================================
+    // ========================================== 
     const translations = {
         en: {
             "nav-work": "Work", "nav-services": "Services", "nav-about": "About", "nav-contact": "Contact", "btn-talk": "Let's Talk",
