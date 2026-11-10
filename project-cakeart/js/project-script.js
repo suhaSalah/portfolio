@@ -99,18 +99,7 @@
         });
     });
 
-    // ==========================================
-    // 3. Mobile Menu Toggle
-    // ==========================================
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const navWrapper = document.querySelector('.nav-wrapper');
-    const navLinks = document.querySelectorAll('.nav-wrapper a');
-
-        if (mobileMenuBtn && navWrapper) {
-        mobileMenuBtn.addEventListener('click', () => {
-            console.log("الزرار اتضغط بنجاح!"); // <--- السطر الجديد ده
-            // إضافة وإزالة الكلاس اللي بيفتح ويقفل القائمة
-            mobileMenuBtn.classList.toggle('active');
+    
 
     // ==========================================
     // 4. Gallery Logic (Hero)
