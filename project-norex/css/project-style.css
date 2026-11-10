@@ -627,7 +627,7 @@ body.project-page-body header .btn-primary:hover {
     .impl-card img {height: 66%;}
     .section-title {font-size: 1.7rem;}
     .section-desc {font-size: .9rem;line-height: 1.8;}
-    .project-hero .project-container, .project-container.two-col {gap: 0rem;}
+    .project-hero .project-container, .project-container.two-col {gap: 2rem;}
 }
 
 .btn-primary {
