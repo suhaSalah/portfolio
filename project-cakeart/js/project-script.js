@@ -132,17 +132,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-   // ==========================================
-// 2. Mobile Menu
-// ==========================================
-const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-const navWrapper = document.querySelector('.nav-wrapper');
-if (mobileMenuBtn && navWrapper) {
-    mobileMenuBtn.addEventListener('click', () => {
-        mobileMenuBtn.classList.toggle('active');
-        navWrapper.classList.toggle('active');
-    });
-}
+      // ==========================================
+    // Mobile Menu Toggle (For Project Pages)
+    // ==========================================
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navWrapper = document.querySelector('.nav-wrapper');
+    const navLinks = document.querySelectorAll('.nav-wrapper a');
+
+    if (mobileMenuBtn && navWrapper) {
+        mobileMenuBtn.addEventListener('click', () => {
+            // إضافة وإزالة الكلاس اللي بيفتح ويقفل القائمة
+            mobileMenuBtn.classList.toggle('active');
+            navWrapper.classList.toggle('active');
+            
+            // تحديث خصائص الوصول (Accessibility)
+            const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+            mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+        });
+
+        // إغلاق القائمة تلقائياً عند الضغط على أي رابط
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                navWrapper.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
 
     // ==========================================
     // 3. Gallery Logic (Hero)
