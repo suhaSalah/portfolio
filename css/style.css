@@ -2232,3 +2232,13 @@ body.medical-theme .mobile-menu-btn .line {
         margin-bottom: 2rem !important;
     }
 }
+
+/* ==========================================================================
+   Spacing above Visual Mockups on Mobile
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* إضافة مسافة من فوق للصور والماك أب في صفحات المشاريع */
+    .project-container.two-col .col-visual {
+        margin-top: 3rem !important;
+    }
+}
