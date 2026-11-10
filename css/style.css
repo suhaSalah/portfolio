@@ -2137,5 +2137,30 @@ body[dir="rtl"] .btn-primary:hover .btn-arrow {
         inset-inline-end: 1.5rem;
     }
 }
+/* 1. الحل الجذري لمنع السكرول الأفقي نهائياً (على أي شاشة) */
+html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw;
+}
 
+/* 2. إصلاح زر الصعود للأعلى لضمان عدم خروجه عن الشاشة */
+.scroll-to-top {
+    position: fixed;
+    inset-inline-end: 1rem; /* تصغير المسافة قليلاً لتناسب كل الشاشات */
+    bottom: 1.5rem;
+    z-index: 9999;
+    margin: 0;
+    /* تأكيد الأبعاد */
+    width: 45px;
+    height: 45px;
+}
+
+/* 3. التعديلات الخاصة بالموبايل (الشاشات الأقل من 768) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column !important;
+        padding-top: 2rem !important;
+    }
+    /* ... rest of the mobile fixes ... */
+}
  
