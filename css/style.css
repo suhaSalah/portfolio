@@ -2197,3 +2197,22 @@ html, body {
     overflow-x: hidden !important; 
     max-width: 100vw;
 }
+/* ==========================================================================
+   Fix Mobile Menu Visibility on Dark Project Pages
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* جعل خلفية القائمة داكنة في صفحات Norex و Medical */
+    body.project-page-body .nav-wrapper,
+    body.medical-theme .nav-wrapper {
+        background-color: #100A1D !important; 
+        border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+    
+    /* التأكد من أن النصوص داخل القائمة بيضاء وواضحة */
+    body.project-page-body .nav-wrapper a,
+    body.project-page-body .nav-wrapper .lang-btn,
+    body.medical-theme .nav-wrapper a,
+    body.medical-theme .nav-wrapper .lang-btn {
+        color: #F8F5FC !important;
+    }
+}
