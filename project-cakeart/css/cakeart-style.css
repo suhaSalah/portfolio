@@ -1,0 +1,124 @@
+/* ==========================================================================
+   CakeArt Theme - Overrides Norex Dark Theme
+   ========================================================================== */
+
+body.cakeart-theme {
+    background-color: #FAF6F5 !important; /* لون كريمي فاتح جداً */
+    background-image: none !important; /* مسح أي خلفيات داكنة سابقة */
+    color: #2D2421 !important; /* لون نص بني داكن للقراءة */
+}
+
+/* إصلاح الهيدر ليتناسب مع الخلفية الفاتحة */
+body.cakeart-theme header {
+    background-color: rgba(250, 246, 245, 0.95) !important;
+    border-bottom: 1px solid rgba(45, 36, 33, 0.05) !important;
+}
+body.cakeart-theme header .logo span,
+body.cakeart-theme header nav a,
+body.cakeart-theme header .lang-btn {
+    color: #2D2421 !important;
+}
+body.cakeart-theme header .lang-btn.active {
+    color: #D49BB3 !important; /* لون وردي */
+}
+body.cakeart-theme header .btn-primary {
+    background-color: #2D2421 !important;
+    color: #FAF6F5 !important;
+    border-color: #2D2421 !important;
+}
+
+/* الألوان المخصصة للمشروع */
+.cakeart-theme {
+    --accent: #D49BB3; /* وردي */
+    --accent-hover: #c4889f;
+    --border-color: rgba(45, 36, 33, 0.1);
+    --text-muted: #7A6A63;
+}
+
+.cakeart-theme .project-title {
+    background: linear-gradient(135deg, #2D2421 0%, #7A6A63 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cakeart-theme .section-title {
+    color: #2D2421;
+}
+
+.cakeart-theme .info-icon {
+    background: rgba(212, 155, 179, 0.15);
+    color: #D49BB3;
+}
+
+.cakeart-theme .tag {
+    background: rgba(45, 36, 33, 0.03);
+    border: 1px solid var(--border-color);
+    color: #2D2421;
+}
+
+.cakeart-theme .laptop-screen {
+    border-color: #e0dcd9; /* لون لابتوب فاتح */
+}
+.cakeart-theme .laptop-base {
+    background: #e0dcd9;
+}
+.cakeart-theme .laptop-base::after {
+    background: #d0ccc9;
+}
+
+/* إبقاء المعرض العائم داكناً كما في التصميم */
+.cakeart-theme .floating-gallery.dark-gallery {
+    background: #e0dcd9; 
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #F8F5FC;
+}
+.cakeart-theme .dark-gallery .gallery-logo { color: #F8F5FC; }
+.cakeart-theme .dark-gallery .gallery-close { color: #F8F5FC; }
+.cakeart-theme .dark-gallery .gallery-nav { color: #F8F5FC; }
+.cakeart-theme .dark-gallery .gallery-count { color: rgba(255,255,255,0.7); }
+
+/* إطارات الأجهزة (ألوان فاتحة) */
+.cakeart-theme .desktop-mockup,
+.cakeart-theme .tablet-mockup,
+.cakeart-theme .resp-desktop,
+.cakeart-theme .resp-tablet {
+    border-color: #2a2a2a; /* إبقاء الإطار رمادي داكن ليتناسب مع الأجهزة */
+}
+.cakeart-theme .mobile-mockup,
+.cakeart-theme .mobile-mockup.small,
+.cakeart-theme .resp-mobile {
+    border-color: #2a2a2a;
+}
+
+/* زر الـ CTA أسفل الصفحة */
+.cakeart-theme .cta-banner {
+    background: linear-gradient(90deg, #F0E6E4 0%, #E2D1D6 100%);
+    border-color: rgba(212, 155, 179, 0.3);
+}
+.cakeart-theme .cta-icon {
+    background: rgba(212, 155, 179, 0.2);
+    color: #D49BB3;
+}
+.cakeart-theme .cta-text h3 {
+    color: #2D2421;
+}
+
+/* أزرار الفيديو واللايت بوكس */
+.cakeart-theme .image-preview-modal {
+    background: rgba(250, 246, 245, 0.95);
+}
+.cakeart-theme .preview-close {
+    color: #2D2421;
+}
+.cakeart-theme .zoom-controls button {
+    background: rgba(0,0,0,0.05);
+    border-color: rgba(0,0,0,0.1);
+    color: #2D2421;
+}
+.cakeart-theme .zoom-controls button:hover {
+    background: #D49BB3;
+    color: #fff;
+}
+.nav-prev, .nav-next {
+    color: #7A6A63;
+}
