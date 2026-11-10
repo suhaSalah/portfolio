@@ -106,22 +106,11 @@
     const navWrapper = document.querySelector('.nav-wrapper');
     const navLinks = document.querySelectorAll('.nav-wrapper a');
 
-    if (mobileMenuBtn && navWrapper) {
+        if (mobileMenuBtn && navWrapper) {
         mobileMenuBtn.addEventListener('click', () => {
+            console.log("الزرار اتضغط بنجاح!"); // <--- السطر الجديد ده
+            // إضافة وإزالة الكلاس اللي بيفتح ويقفل القائمة
             mobileMenuBtn.classList.toggle('active');
-            navWrapper.classList.toggle('active');
-            const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
-            mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
-        });
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenuBtn.classList.remove('active');
-                navWrapper.classList.remove('active');
-                mobileMenuBtn.setAttribute('aria-expanded', 'false');
-            });
-        });
-    }
 
     // ==========================================
     // 4. Gallery Logic (Hero)
